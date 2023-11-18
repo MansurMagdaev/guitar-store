@@ -1,0 +1,43 @@
+.shoping__container {
+    width: 97%;
+    height: 97vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: var(--spacing-large);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+.shoping__element-name {
+    padding: var(--spacing-medium);
+    font-weight: bold;
+}
+.shoping__element-price {
+    padding: var(--spacing-medium);
+    color: var(--color-unaccent);
+}
+.shoping__close {
+
+}
+
+.shoping__close::before,
+.shoping__close::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.shoping__close::before {
+    top: 50px;
+    transform: rotate(-45deg);
+}
+.shoping__close::after {
+    top: 50px;
+    transform: rotate(45deg);
+
+}
