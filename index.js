@@ -6,5 +6,10 @@ function render() {
 
 }
 
+spinnerPage.render()
 
-render()
+setTimeout(() => {
+    spinnerPage.handleClear()
+    render()
+}, 1000)
+
